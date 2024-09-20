@@ -11,6 +11,9 @@ import HeroRectangleTwo from "../assets/imagens/rectangle_Two.png";
 import "../styles/hero.css";
 import Card from "../components/Card";
 import QrCode from "../assets/imagens/qrCodeZap.png";
+import Logo_zap from "../assets/imagens/icons8-whatsapp-144.png";
+import Loja from "../assets/imagens/lojas.png";
+import "../styles/solution.css"
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -118,22 +121,27 @@ export default function Home() {
                 </div>
             </section>
 
-            <section id="solution">
-                <div>
-                    <h3>Conheça-nos</h3>
+
+            <section id="solution" > 
+
+                <div className="know_us">
+                    <h1>Conheça-nos</h1>
                     <p>Somos legais</p>
                 </div>
 
-                <div>
-                    <Card titulo="Nosso APP" text="Instale nosso aplicativo disponível para Android e IOS" />
-                    <Card titulo="Entre em contato" text="Caso tiver problemas em pegar sua ficha contatenos no email" />
+                <div className="cards">
+                    <Card titulo="Nosso APP" text="Instale nosso aplicativo disponível para Android" imagem={Loja}/>
+                    <Card titulo="Entre em contato" text="Caso tiver problemas em pegar sua ficha contatenos no email" imagem={Logo_zap}/>
                 </div>
 
-                <div>
+                <div className="support">
                     <p>Entre em contato com o suporte via whatsapp</p>
                     <img src={QrCode} alt="qrcode" />
                     <link rel="linkzap" href="https://w.app/DJv0OL" />
                 </div>
+                        <div>
+                            <p>DEVELOPED BY VJMPASSOS®️</p>
+                        </div>
             </section>
         </>
 

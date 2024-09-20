@@ -17,8 +17,8 @@
   --second-text-color:#737373;
   --light-text-color: #fff;
   --light-gray: #f8f8f8;
-  --primary-color:#23a6f0;
-  --secondary-color: #ff6600;
+  --primary-color:#007bc2;
+  --secondary-color: rgb(255, 102, 0);
 
   --ff-sans: "Montserrat", system-ui, sans-serif;
   --fw-base: 400;
