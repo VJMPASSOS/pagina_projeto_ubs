@@ -2,6 +2,19 @@
 display: flex;
 flex-direction: row;
 padding-bottom: 5vw;
+align-items: center;
+justify-content: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+@media (width <= 1280px) {
+.cards{
+display: flex;
+flex-direction: column;
+}
 }
 
 .know_us{
@@ -10,6 +23,7 @@ padding-bottom: 5vw;
 
 .know_us p{
     color: var(--second-text-color);
+    font-size: 16px;
 }
 
 .support{
@@ -19,8 +33,8 @@ padding-bottom: 5vw;
     color: var(--primary-color);
 }
 .support p{
-    font-size: 1.2vw;
+    font-size: 16px;
 }
 p{
-    font-size: 0.8vw;
+    font-size: 10px;
 }

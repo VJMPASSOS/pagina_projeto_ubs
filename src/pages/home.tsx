@@ -20,14 +20,15 @@ export default function Home() {
 
     useEffect(() => {
         if (showMobileMenu) {
-            //dar um jeito de deixar o overflow-y: hidden
+            document.body.classList.add('no-scroll');  
         } else {
-            // remover o over y hidden
+            document.body.classList.remove('no-scroll');  
         }
         console.log("Minha nossa, nossa, nooooossa");
-    }, [showMobileMenu])
+    }, [showMobileMenu]);
     return (
         <>
+        
             <header className="container py-sm">
 
                 <nav className="flex items-center justify-between">

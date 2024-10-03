@@ -1,44 +1,45 @@
 .crd{
     background-color: var(--light-gray);
-    border-bottom: 0.5vh solid var(--secondary-color);
-    height: 55vh;
-    width: 20vw;
+    border-bottom: 5px solid var(--secondary-color);
+    height: 400px;
+    width: 300px;
     text-align: center;
-    padding: 2vw;
+    padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: 0.3s;
 }
 
 .crd h2{
-    font-size: 35px;
+    padding-top: 5%;
+    font-size: 30px;
 }
 
 .crd p{
-    font-size: 20px;
+    padding-top: 30%;
+    font-size: 16px;
     color: var(--second-text-color);
 }
 
 .crd img{
-    width: 5vw;
-    padding-top: 2vw;
+    width: 80px;
+    padding-top: 35%;
 }
 
 .cards .crd:first-of-type img{
-    padding-top: 7vw;
-    width: 20vw;
+    padding-top: 35%;
+    width: 280px;
 }
 
 .cards{
     padding-top: 4vw;
-    padding-left: 25vw;
     gap: 10vw;
 }
 
 .crd:hover{
-    border-bottom: 1vh solid var(--secondary-color);
-    height: 56.5vh;
-    margin-top: -1vw;
-    margin-bottom: -1vw;
+    border-bottom: 6px solid var(--secondary-color);
+    height: 420px;
+    margin-top: -10px;
+    margin-bottom: -10px;
     transition: 0.3s;
 }

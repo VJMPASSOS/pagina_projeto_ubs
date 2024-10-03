@@ -10,8 +10,18 @@
     height: 60%;
     padding-left: 30%;
 }
+
+.no-scroll{
+ overflow: hidden !important;
+ height: 100vh;
+
+}
+#hero h1 {
+    font-size: 50px;
+}
 #hero p {
     color: var(--second-text-color);
+    font-size: 16px;
   }
   #hero .content {
     z-index: 1;
@@ -26,6 +36,12 @@
     align-self: center;
     margin-bottom: 20%;
 }
+
+@media (width: 1280px){
+    #hero {
+        overflow: hidden;
+    }
+}
 @media (width >= 1280px) {
     #hero {
         background: var(--bg-color);
@@ -33,12 +49,15 @@
         height: 90vh;
         display: flex;
         overflow: hidden;
+        position: relative;
         > span {
             position: absolute;
             top: 0;
         }
         
         > img {
+            position: absolute;
+            right: 0;
             top: 0;
             height: 82%;
             padding-left: 55%;
