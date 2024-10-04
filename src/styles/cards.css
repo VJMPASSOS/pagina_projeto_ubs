@@ -11,6 +11,7 @@
 }
 
 .crd h2{
+    color: var(--primary-color);
     padding-top: 5%;
     font-size: 30px;
 }
