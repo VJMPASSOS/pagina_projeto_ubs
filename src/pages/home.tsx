@@ -47,7 +47,7 @@ export default function Home() {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NzU4NDcxMzk4OTQ4MzA5MjY1IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJ2am1wYXNzb3NAbWluaGEuZmFnLmVkdS5iciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiSEV3cTg4bkdYU1hadXhmSWNVc1NsQSIsImlhdCI6MTczMjE2NTYyMywiZXhwIjoxNzMyMTY5MjIzfQ.PyuUbzszgf6_gRcrY9ENiRFR8JspBFoXG2xzODr46DtDpgGdXr5Q4d_P0mu5rSH3w2AqjwDP7fEEMaRfPW5NeReZd70k8cfFWoKMcA_Df6Qflf2AfSc3qAxWnt3gwg2zlCCv7U8ZKVOa1_4RoKLbq_aANuc9CCG4KbuPtNvtmua1ALZWtCTQasLYab9ZR2DFEo2jKvvnN64EjWnfDAmAfOBvtWx5eta6WRjdzdXKUR2i4AYIyC9QLdEFU-kooVAP_JXwz3s4oA1wKRvXxnMt-MAmH9CqDBQVE3tBX0f9nzcHwrsRABTiws4brZiUOv7i6eMj2qDt2508hRPFoLptcQ",
+                "Authorization": "Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImQ5NzQwYTcwYjA5NzJkY2NmNzVmYTg4YmM1MjliZDE2YTMwNTczYmQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJhenAiOiIzMjU1NTk0MDU1OS5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImF1ZCI6IjMyNTU1OTQwNTU5LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA2NzU4NDcxMzk4OTQ4MzA5MjY1IiwiaGQiOiJtaW5oYS5mYWcuZWR1LmJyIiwiZW1haWwiOiJ2am1wYXNzb3NAbWluaGEuZmFnLmVkdS5iciIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhdF9oYXNoIjoiaE9aeWZmTlMzQmNKX2l5WTlCQmNDZyIsImlhdCI6MTczMjIzMDIwMSwiZXhwIjoxNzMyMjMzODAxfQ.FFUeZvw9kFgWV6N3vN1eyLdoLWOz2LVIv5MbCLoXG1kD9UlYKqhI6TbLHPewGzUbEpK8lbHQdHDF0gvnoSOepnKFJVsKoTMnwFab4-n8DLSdv99m3eAj9R18bKtSv2Idpw3HVihil3VfJ5IKnYTjQGw9i_QQy48vGgqjtIzWWQApF2uixkkaItG4IUQkWcQ6jDKW4cvI7jMjLG0YykDjUlIL76P1RsZSlEy2vJeoKH18bWhuImPUBuKQ6c_edF1nwWFNcT_CpGENLwSLUWwuAftWAYZnapv40xE0PweaLO1wO27gCiPP9QEeaLokF-Zxb3x_aKRMZXzfrSRqV1W_PA",
 
             },
             body: JSON.stringify(requestBody)
@@ -275,14 +275,14 @@ export default function Home() {
                 <div className="footer-container">
                     <img src={u} width="24" alt="Logo UbsOn" className="footer-logo" />
                     <p className="footer-tagline">
-                        O futuro das Unidades Básicas de Saúde e o seu tempo!
+                        O futuro das Unidades Básicas de Saúde e do seu tempo!
                     </p>
                     <div className="footer-links">
                         <a href="https://www.instagram.com" target="_blank">Instagram</a>
                         <a href="https://www.facebook.com" target="_blank">Facebook</a>
                         <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
                     </div>
-                    <p className="footer-address">Endereço: Rua da Piscicultura, 123 - Cascavel, PR</p>
+                    <p className="footer-address">Endereço: Rua Barão do Serro Azul, 300 - Xique Xique Bahia</p>
                     <p>Email: <a href="jemolineti@minha.fag.edu.br" className="footer-email">jemolineti@minha.fag.edu.br</a></p>
                     <p className="footer-rights">© 2024 Ubson. Todos os direitos reservados.</p>
                     <div className="footer-support">

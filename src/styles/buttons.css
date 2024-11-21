@@ -44,8 +44,8 @@
 
 .btn-3 {
     width: 100%;
-    background: var(--accent-color);
-    color: var(--dark-text-color);
+    background: var(--text-color);
+    color: var(--light-text-color);
     font-weight: var(--fw-bold);
     font-size: var(--fs-sm);
     padding-block: 0.825rem;
