@@ -1,4 +1,4 @@
-.btn-primary {
+.btn-1 {
     width: 100%;
     background: var(--primary-color);
     color: var(--light-text-color);
@@ -9,15 +9,18 @@
     border-radius: 0.4rem;
     cursor: pointer;
     border: solid transparent 0.15rem;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn-primary:hover {
+.btn-1:hover {
     background: transparent;
     color: var(--primary-color);
     border-color: var(--primary-color);
+    text-align: center;
 }
 
-.btn-secondary {
+.btn-2 {
     width: 100%;
     background: transparent;
     color: var(--primary-color);
@@ -27,11 +30,57 @@
     padding-inline: 1.5rem;
     border-radius: 0.4rem;
     cursor: pointer;
+    text-align: center;
     border: solid var(--primary-color) 0.15rem;
+    transition: all 0.3s ease-in-out;
 }
 
-.btn-secondary:hover {
+.btn-2:hover {
     background: var(--primary-color);
     color: var(--light-text-color);
+    text-align: center;
     border-color: transparent;
+}
+
+.btn-3 {
+    width: 100%;
+    background: var(--accent-color);
+    color: var(--dark-text-color);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.825rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none; /* Remove sublinhado */
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-3:hover {
+    background: var(--accent-hover-color);
+    color: var(--light-text-color);
+    text-align: center;
+}
+
+.btn-4 {
+    width: 30%;
+    background: var(--secondary-color); /* Cor de fundo secundária */
+    color: var(--light-text-color); /* Cor do texto */
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-sm);
+    padding-block: 0.825rem;
+    padding-inline: 1.5rem;
+    border-radius: 0.4rem;
+    cursor: pointer;
+    text-align: center;
+    border: solid transparent 0.15rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-4:hover {
+    background: var(--light-text-color); /* Fundo branco ao hover */
+    color: var(--secondary-color); /* Texto muda para a cor secundária */
+    border-color: var(--secondary-color); /* Borda secundária ao hover */
 }

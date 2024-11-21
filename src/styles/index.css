@@ -1,9 +1,10 @@
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: border-box;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   font: inherit;
@@ -11,13 +12,13 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-:root{
+:root {
   --bg-color: #f5f5f5;
   --text-color: #252b42;
-  --second-text-color:#737373;
+  --second-text-color: #737373;
   --light-text-color: #fff;
   --light-gray: #f8f8f8;
-  --primary-color:#007bc2;
+  --primary-color: #007bc2;
   --secondary-color: rgb(255, 102, 0);
 
   --ff-sans: "Montserrat", system-ui, sans-serif;
@@ -29,7 +30,7 @@
   --fs-base: 1rem;
   --fs-lg: 1.25rem;
   --fs-xl: 1.75rem;
-  --fs-2xl: 2.25rem;
+  --fs-2xl: 2.5rem;
 
   --py-sm: 0.875rem;
   --py-base: 1rem;
@@ -49,28 +50,35 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: var(--bg-color);
   overflow-x: hidden;
 }
 
-h1,h2,h3{
+h1,
+h2,
+h3 {
   line-height: 1.2;
   color: var(--text-color);
   font-weight: var(--fw-bold);
   letter-spacing: -0.04em;
 }
 
-h1{
+h1 {
   font-size: var(--fs-2xl);
 }
-h2{
+
+h2 {
   font-size: var(--fs-xl);
 }
-h3{
+
+h3 {
   font-size: var(--fs-lg);
 }
 
+p{
+  font-size: var(--fs-lg);
+}
 a {
   text-decoration: none;
   color: var(--second-text-color);
@@ -82,7 +90,7 @@ a:hover {
   color: var(--primary-color);
 }
 
-img{
+img {
   max-width: 100%;
   display: inline-block;
 }
@@ -91,20 +99,193 @@ ul {
   list-style: none;
 }
 
-@media (width >= 1280px) {
+@media (width >=1280px) {
   :root {
-      --fs-lg: 2rem;
-      --fs-xl: 2.625rem;
-      --fs-2xl: 4rem;
+    --fs-lg: 2rem;
+    --fs-xl: 2.625rem;
+    --fs-2xl: 4rem;
 
-      --py-sm: 1rem;
-      --py-base: 1.5rem;
-      --py-lg: 2.5rem;
-      --py-xl: 5rem;
-      --pg-lg: 2rem;
+    --py-sm: 1rem;
+    --py-base: 1.5rem;
+    --py-lg: 2.5rem;
+    --py-xl: 5rem;
+    --pg-lg: 2rem;
   }
 }
 
-#solution{ 
+#solution {
   color: (var(--primary-color));
+}
+
+
+
+@keyframes swipe {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* Footer Styles */
+#footer {
+  background-color: #2c3e50;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+.footer-tagline {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--secondary-color);
+}
+
+.footer-address {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-email {
+  color: white;
+  text-decoration: underline;
+  font-size: 1rem;
+}
+
+.footer-email:hover {
+  color: var(--secondary-color);
+}
+
+.footer-rights {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+.footer-support {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.footer-support p {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.footer-qrcode {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-whatsapp {
+  display: inline-block;
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  background-color: #1abc9c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.footer-whatsapp:hover {
+  background-color: #16a085;
+}
+
+
+/*form*/
+.contact-section {
+  background-color: #f9f9f9;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.contact-container h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-container p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #555555;
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #333333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-form textarea {
+  resize: none;
 }

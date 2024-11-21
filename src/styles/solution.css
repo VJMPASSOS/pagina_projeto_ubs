@@ -6,17 +6,12 @@ align-items: center;
 justify-content: center;
 }
 
-h1 {
-    font-size: 50px;
-}
-
-@media (width <= 1280px) {
+@media (width <= 600px) {
 .cards{
 display: flex;
 flex-direction: column;
 }
 }
-
 .know_us{
     text-align: center;
 }
@@ -35,6 +30,7 @@ flex-direction: column;
 .support p{
     font-size: 16px;
 }
+
 p{
-    font-size: 10px;
+    font-size: var(--fs-lx);
 }

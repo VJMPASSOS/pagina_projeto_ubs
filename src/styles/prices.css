@@ -1,0 +1,160 @@
+#pricing {
+    display: flex;
+    flex-direction: column;
+    padding-block: 4rem;
+    gap: 2rem;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  
+    :first-child {
+      color: var(--primary-color);
+      font-weight: var(--fw-bold);
+    }
+  }
+
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-self: center;
+    height: min-content;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 1.5rem;
+    box-shadow: rgba(58, 68, 78, 0.2) 0px 12px 24px;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  
+    :first-child {
+      color: var(--primary-color);
+      font-weight: var(--fw-bold);
+    }
+  }
+
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-self: center;
+    height: min-content;
+    padding: 1.5rem 1.5rem 3rem 1.5rem;
+    background-color: var(--light-gray);
+    box-shadow: rgba(58, 68, 78, 0.2) 0px 12px 24px;
+    border: 1px solid gray; 
+
+    .hr {
+        height: 1.5px;
+        background-color: var(--primary-color);
+        margin-block: 0.725rem;
+      }
+
+      .features {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      li{
+        display: flex;
+        flex-direction: row;
+        gap:1rem;
+      }
+      .plan {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+      .mensalidade{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+      }
+  }
+}
+
+@media (width <= 750px) {
+    #pricing {
+      gap: 5rem;
+      padding-block: 5rem;
+      align-items: center;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+    .pricing-card{
+      width: 100%;
+
+    }
+  }
+
+  .pricing-premium-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-self: center;
+    height: min-content;
+    padding: 0rem 1.5rem 3rem 1.5rem;
+    background-color: var(--light-gray);
+    border-radius: 1.5rem;
+    box-shadow: rgba(58, 68, 78, 0.2) 0px 12px 24px;
+    border: 2px solid gold; 
+  }
+  
+  .card-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    width: 65%;
+    height: 2.5rem;
+    align-self: center;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  
+    p {
+      font-size: 12px;
+      font-weight: var(--fw-md);
+      color: var(--light-text-color);
+    }
+  }
+  .pricing-premium-card .hr {
+    height: 1.5px;
+    background-color: gold;
+    margin-block: 0.725rem;
+  }
+  
+  .pricing-premium-card .features {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .pricing-premium-card li {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  
+  .pricing-premium-card .plan {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .pricing-premium-card .mensalidade {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  .pricing-premium-card:hover, .pricing-card:hover {
+    transform: translateY(-5px); 
+     }
